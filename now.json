@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "public": true,
+  "builds": [
+    {
+      "src": "./host.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [{ "src": "/.*", "dest": "host.js" }]
+}
