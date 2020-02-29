@@ -1,5 +1,8 @@
 import React from 'react';
 import Button from '../src/components/Button';
+import { MoreHoriz } from '@material-ui/icons';
+import IconButton from '../src/components/IconButton';
+
 export default {
   title: 'Button',
 };
@@ -33,4 +36,9 @@ export const secondaryDisabledButton = () => (
   <Button color="secondary" disabled>
     Button
   </Button>
+);
+export const primaryIconButton = () => (
+  <IconButton color="primary" title="Text">
+    <MoreHoriz />
+  </IconButton>
 );
